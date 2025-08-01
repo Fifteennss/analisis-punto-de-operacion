@@ -279,3 +279,11 @@ with st.expander("📚 Teoría y Referencias"):
     Intersección entre ambas curvas, donde:
     $$ H_{bomba}(Q_{op}) = H_{sistema}(Q_{op}) $$
     """)
+
+# Pie de página de autoría
+st.markdown("""
+---
+**Creado por:** Diego Gonzales Chapoñan  
+Estudiante de Ingeniería Mecánica  
+Universidad Nacional del Santa, 2025
+""")
