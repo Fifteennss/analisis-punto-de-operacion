@@ -503,7 +503,7 @@ if st.button("🔄 Calcular Punto de Operación", type="primary"):
             st.write(f"- Rugosidad: {rugosidad:.6f} m")
 
 # Información adicional
-with st.expander("📚 Teoría y Referencias"):
+with st.expander("📚 Teoría"):
     st.markdown(r"""
     ## **Fundamento Teórico**
     
@@ -539,3 +539,16 @@ with st.expander("📚 Teoría y Referencias"):
     ### 7. Número de Reynolds
     $ Re = \frac{\rho v D}{\mu} = \frac{4 \rho Q}{\pi D \mu} $
     """)
+
+# Pie de página profesional, centrado
+st.markdown(
+    """
+    <hr style="margin-top: 2em; margin-bottom: 1em;">
+    <div style="text-align: center; font-size: 1.1em; color: #555;">
+        Creado por: <b>Diego Gonzales Chapoñan</b><br>
+        Estudiante de Ingeniería Mecánica<br>
+        Universidad Nacional del Santa, 2025
+    </div>
+    """,
+    unsafe_allow_html=True
+)
