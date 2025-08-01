@@ -398,9 +398,9 @@ if st.button("🔄 Calcular Punto de Operación", type="primary"):
         st.pyplot(fig)
         
         # =============================================
-        # RESULTADOS NUMÉRICOS DETALLADOS
+        # RESULTADOS NUMÉRICOS
         # =============================================
-        st.subheader("🔍 Resultados Numéricos Detallados")
+        st.subheader("🔍 Resultados Numéricos")
         
         col1, col2, col3 = st.columns(3)
         
@@ -435,18 +435,16 @@ if st.button("🔄 Calcular Punto de Operación", type="primary"):
             )
             
             st.markdown(f"""
-            - **Caudal:** `{Q_op:.6f} m³/s`
-            - **Caudal:** `{convertir_caudal(Q_op, 'm³/s', caudal_unidad):.4f} {caudal_unidad}`
-            - **Altura:** `{H_op:.4f} m`
-            - **Altura:** `{convertir_longitud(H_op, 'm', altura_unidad_bomba):.4f} {altura_unidad_bomba}`
+            - **Caudal:** `{Q_op:.6f} m³/s` ({convertir_caudal(Q_op, 'm³/s', caudal_unidad):.4f} {caudal_unidad})
+            - **Altura:** `{H_op:.4f} m` ({convertir_longitud(H_op, 'm', altura_unidad_bomba):.4f} {altura_unidad_bomba})
             - **Velocidad:** `{v_op:.4f} m/s`
             - **Reynolds:** `{Re_op:.2e}`
             """)
         
         # =============================================
-        # RESUMEN EJECUTIVO
+        # RESUMEN 
         # =============================================
-        st.subheader("📋 Resumen Ejecutivo")
+        st.subheader("📋 Resumen")
         
         eficiencia_hidraulica = (H_estatica / H_op) * 100 if H_op > 0 else 0
         perdidas_porcentaje = ((hf_prim_op + hf_sec_op) / H_op) * 100 if H_op > 0 else 0
