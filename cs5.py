@@ -375,7 +375,7 @@ if st.button("🔄 Calcular Punto de Operación", type="primary"):
         ax.plot(Q_bomba, H_bomba, 'bo', label='Datos bomba', markersize=8, markerfacecolor='lightblue', markeredgecolor='blue', markeredgewidth=2)
         ax.plot(Q_range, H_bomba_curve, 'b-', label='Curva de la bomba', linewidth=3)
         ax.plot(Q_range, H_sistema_curve, 'r-', label='Curva del sistema', linewidth=3)
-        ax.plot(Q_op, H_op, 'ro', markersize=12, label=f'Punto de operación\n(Q={Q_op:.4f} m³/s, H={H_op:.2f} m)', 
+        ax.plot(Q_op, H_op, 'ro', markersize=12, label=f'Punto de operación\n(Q={Q_op:.6f} m³/s, H={H_op:.4f} m)', 
                 markerfacecolor='yellow', markeredgecolor='red', markeredgewidth=3)
         
         # Líneas de referencia
