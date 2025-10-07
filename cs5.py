@@ -547,7 +547,7 @@ st.markdown(
     <div style="text-align: center; font-size: 1.1em; color: #555;">
         Creado por: <b>Diego Gonzales Chapoñan</b><br>
         Estudiante de Ingeniería Mecánica<br>
-        Universidad Nacional del Santa, 2025
+        Universidad Nacional del Santa, 2025.
     </div>
     """,
     unsafe_allow_html=True
