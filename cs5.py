@@ -192,7 +192,7 @@ with st.sidebar:
         with col1:
             num = st.number_input(f"Número", 0, 100, 1, key=f"num_{i}")
         with col2:
-            k = st.number_input(f"Coeficiente K", 0.0, 15.0, 0.5, key=f"k_{i}")
+            k = st.number_input(f"Coeficiente K", 0.0, 15.0, 0.01, key=f"k_{i}")
         coef_perdida_total += num * k
 
 # Datos de la bomba
